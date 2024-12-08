@@ -1,0 +1,3 @@
+ctrl+shit+p - select python intepreter
+create venv - use requirements.txt
+then in backend folder run "flask run" - cmd
