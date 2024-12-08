@@ -1,0 +1,57 @@
+marcel@marcel-MS-7B89:~/Documents/web-app-projects$ cd flask
+marcel@marcel-MS-7B89:~/Documents/web-app-projects/flask$ git clone https://github.com/Marcel-bit/flask-full-stack.git flask-to-do
+Cloning into 'flask-to-do'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 10 (delta 0), reused 7 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (10/10), 139.83 KiB | 532.00 KiB/s, done.
+marcel@marcel-MS-7B89:~/Documents/web-app-projects/flask$ cd flask-to-do
+marcel@marcel-MS-7B89:~/Documents/web-app-projects/flask/flask-to-do$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        backend/tt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+marcel@marcel-MS-7B89:~/Documents/web-app-projects/flask/flask-to-do$ git add .
+marcel@marcel-MS-7B89:~/Documents/web-app-projects/flask/flask-to-do$ git commit -m "version tt"
+[master 11a9497] version tt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 backend/tt.txt
+marcel@marcel-MS-7B89:~/Documents/web-app-projects/flask/flask-to-do$ git remote
+origin
+marcel@marcel-MS-7B89:~/Documents/web-app-projects/flask/flask-to-do$ git remote -v
+origin  https://github.com/Marcel-bit/flask-full-stack.git (fetch)
+origin  https://github.com/Marcel-bit/flask-full-stack.git (push)
+marcel@marcel-MS-7B89:~/Documents/web-app-projects/flask/flask-to-do$ git remote origin master
+error: unknown subcommand: `origin'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+marcel@marcel-MS-7B89:~/Documents/web-app-projects/flask/flask-to-do$ git push  origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 346 bytes | 346.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Marcel-bit/flask-full-stack.git
+   31addb3..11a9497  master -> master
+marcel@marcel-MS-7B89:~/Documents/web-app-projects/flask/flask-to-do$ 
